@@ -239,10 +239,43 @@ footer .social-media img {
     padding: 10px;
 }
 
-
 .padding {
     padding-left: 5%;
     padding-right: 5%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* === FEATURED CARS LAYOUT === */
+.car-list {
+    display: flex;              /* puts the cars in a row */
+    flex-wrap: wrap;            /* allow wrapping on small screens */
+    gap: 2rem;                  /* space between the cards */
+    justify-content: center;    /* keeps the row centred */
+}
+
+.car {
+    flex: 1 1 calc(33.333% - 2rem); /* three‑up layout, minus the gap */
+    max-width: 350px;               /* stops them getting too wide on 4K screens */
+    text-align: center;
+}
+
+.car img {
+    width: 100%;          /* scale to the card width */
+    height: auto;         /* keep aspect ratio */
+    border-radius: 8px;   /* optional: rounded corners */
+    object-fit: cover;    /* crops oversized photos gracefully */
+}
+
+/* === RESPONSIVE TWEAKS === */
+@media (max-width: 900px) {
+    .car {
+        flex: 1 1 calc(50% - 2rem); /* two‑up on tablets */
+    }
+}
+
+@media (max-width: 550px) {
+    .car {
+        flex: 1 1 100%;  /* single column on phones */
+    }
 }
