@@ -233,7 +233,7 @@ footer .social-media img {
     gap: 20px;
 }
 
-/* Style for individual car listings (you'll need to add more) */
+/* STYLE FOR INDIVIDUAL CAR LISTINGS */
 .car-listing {
     border: 1px solid #ccc;
     padding: 10px;
@@ -248,34 +248,34 @@ footer .social-media img {
 
 /* === FEATURED CARS LAYOUT === */
 .car-list {
-    display: flex;              /* puts the cars in a row */
-    flex-wrap: wrap;            /* allow wrapping on small screens */
-    gap: 2rem;                  /* space between the cards */
-    justify-content: center;    /* keeps the row centred */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .car {
-    flex: 1 1 calc(33.333% - 2rem); /* three‑up layout, minus the gap */
-    max-width: 350px;               /* stops them getting too wide on 4K screens */
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: 350px;
     text-align: center;
 }
 
 .car img {
-    width: 100%;          /* scale to the card width */
-    height: auto;         /* keep aspect ratio */
-    border-radius: 8px;   /* optional: rounded corners */
-    object-fit: cover;    /* crops oversized photos gracefully */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* === RESPONSIVE TWEAKS === */
 @media (max-width: 900px) {
     .car {
-        flex: 1 1 calc(50% - 2rem); /* two‑up on tablets */
+        flex: 1 1 calc(50% - 2rem);
     }
 }
 
 @media (max-width: 550px) {
     .car {
-        flex: 1 1 100%;  /* single column on phones */
+        flex: 1 1 100%;
     }
 }
