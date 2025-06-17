@@ -238,3 +238,11 @@ footer .social-media img {
     border: 1px solid #ccc;
     padding: 10px;
 }
+
+
+.padding {
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
