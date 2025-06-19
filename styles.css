@@ -193,11 +193,59 @@ footer .social-media img {
 @media (max-width: 550px) { .car { flex: 1 1 100%; } }
 
 /* ---------- CAR LISTING PAGE SPECIFIC STYLES ---------- */
-.container { max-width: 1200px; margin: auto; padding: 20px; background-color: #fff; }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+}
 
-.main-info { display: flex; flex-wrap: wrap; gap: 20px; }
+.main-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-.main-image img { width: 100%; max-width: 600px; border-radius: 8px; }
+.main-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
 
-.gallery { display: flex; gap: 10px; margin-top
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.details h2 {
+  margin-top: 0;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.details button {
+  background-color: #0073aa;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.details button:hover {
+  background-color: #005d8a;
+}
