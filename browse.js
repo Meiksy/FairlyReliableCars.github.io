@@ -1,4 +1,4 @@
-// This is our list of cars
+// Car list (Only 3 for now). 
 var cars = [
   {
     name: "Mitsubishi Lancer EVO VIII",
@@ -25,7 +25,7 @@ var searchInput = document.getElementById("searchInput");
 var searchBtn = document.getElementById("searchBtn");
 var resultsContainer = document.querySelector(".car-listings");
 
-// Function to show cars on the page
+// Function to display cars on the page
 function showCars(list) {
   var html = "";
 
@@ -60,7 +60,8 @@ function searchCars() {
       for (var j = 0; j < car.keywords.length; j++) {
         if (car.keywords[j].indexOf(query) !== -1) {
           found.push(car);
-          break; // stop checking keywords if one matched
+          break;
+          // stop checking keywords if one matched
         }
       }
     }
@@ -72,7 +73,7 @@ function searchCars() {
 // When page loads, show all cars
 showCars(cars);
 
-// When the user clicks "Search"
+//  Search button
 searchBtn.addEventListener("click", searchCars);
 
 // Also search when user presses Enter
